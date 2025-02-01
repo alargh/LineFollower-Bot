@@ -111,16 +111,6 @@ class DashedLineDetector(DTROS):
         return result
 
 
-    def chunk_image(self,image):
-        chunks = []
-        top = self.search_area.value['top']
-        bottom = self.search_area.value['bottom']
-        n = self.search_area.value['n']
-        dh = (bottom-top)//n
-        for i in range(n-1):
-            chunks.append(image[top+i*dh:top+(i+1)*dh,0:self.image_param.value['width']])
-        return chunks
-    
     def fit_spline(self, points):
         """
         Fits a parametric spline to the given points.
