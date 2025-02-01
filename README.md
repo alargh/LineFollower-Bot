@@ -53,8 +53,8 @@ The PID controller adjusts the Duckiebot's angular velocity to correct its path.
 ### Dependencies
 The following dependencies are required to run this project:
 
-cv2 (OpenCV): For image processing and contour detection.
-numpy: For numerical operations and array handling.
-scipy: For spline fitting.
-duckietown: For integration with Duckiebot's software environment.
-rospy: For ROS (Robot Operating System) communication and node management.
+1. cv2 (OpenCV): For image processing and contour detection.
+2. numpy: For numerical operations and array handling.
+3. scipy: For spline fitting.
+4. duckietown: For integration with Duckiebot's software environment.
+5. rospy: For ROS (Robot Operating System) communication and node management.
